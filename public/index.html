@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>AI Chat app</title>
+  </head>
+  <body>
+    <h1>AiChat</h1>
+    <div class="main">
+      <div class="name">
+        <span>
+          <input
+            type="text"
+            id="name-input"
+            class="name-input"
+            value="anonymous"
+            maxlength="20"
+          />
+        </span>
+      </div>
+      <ul class="message-container" id="message-container">
+        <li class="message-left">
+          <p class="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+            doloremque dolore odio in.
+            <span>bluebird • 26 July 10:40</span>
+          </p>
+        </li>
+        <li class="message-right">
+          <p class="message">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+            doloremque dolore odio in, voluptatibus neque voluptate tenetur
+            reprehenderit at velit deserunt ad ab numquam doloribus quos
+            exercitationem fuga iure porro.
+            <span>bluebird • 26 July 10:40</span>
+          </p>
+        </li>
+        <li class="message-feedback">
+          <p class="feedback" id="feedback">killer is typing a message</p>
+        </li>
+      </ul>
+      <form class="message-form" id="message-form">
+        <input
+          type="text"
+          name="message"
+          id="message-input"
+          class="message-input"
+        />
+        <div class="v-divider"></div>
+        <button type="submit" class="send-button">send</button>
+      </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"
+      integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
